@@ -1,3 +1,4 @@
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -8,7 +9,7 @@ import './MyNavbar.css';
 function MyNavbar() {
   return (
     <Navbar expand="lg" className="moveToRight">
-      <Container fluid>
+      <Container fluid >
         <Navbar.Brand href="#">
           <img
             alt="Coach Hire Logo"
@@ -21,17 +22,20 @@ function MyNavbar() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" style={{ width: '100%' }}>
           <Nav
-            className="myNavbarColor"
+            // className="moveToRight"
             style={{ maxHeight: '100px' }}
             navbarScroll
-          >
+          > 
+        
             <NavDropdown title="Area" id="area">
+              
               <NavDropdown.Item href="#action3">London Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">England Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">Ireland Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">Scotland Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">Wales Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">European Coach Hire</NavDropdown.Item>
+            
             </NavDropdown>
             <NavDropdown title="Service" id="service">
               <NavDropdown.Item href="#action3">Airport Transfer</NavDropdown.Item>

@@ -1,7 +1,7 @@
 .social-icons-container {
-  margin-left: auto; /* Pushes the icons to the right */
-  display: flex; /* Aligns icons horizontally */
-  gap: 10px; /* Adds space between icons */
+  margin-left: auto; 
+  display: flex; 
+  gap: 10px; 
   
 }
 
@@ -13,32 +13,40 @@
 
 .header-logo img {
   cursor: pointer;
-  transition: transform 0.3s ease; /* Optional hover effect */
+  transition: transform 0.3s ease; 
   
 }
 
 .header-logo img:hover {
-  transform: scale(1.1); /* Slightly enlarge icon on hover */
+  transform: scale(1.1); 
 }
 
+ /* Background color of top Bar */
 .bgColor {
-  background-color: rgba(8, 16, 85, 0.562) !important;
-  height: 50px; /* Adjust the height to half of its default size */
-  display: flex; /* Ensures proper alignment of content */
-  align-items: center; /* Vertically centers the content */
+  background-color: rgba(8, 16, 85, 0.911) !important;
+  height: 50px; 
+  display: flex;
+  align-items: center;
+  
 }
 
 
 .App {
-  background-image: url('./images/CoachHireBackground.jpg'); /* Correct path */
+  background-image: url('./images/CoachHireBackground.jpg'); 
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 100vh; 
   background-size: cover;
   background-position: center;
-  z-index: -1; /* Ensures the background stays behind content */
+  z-index: -1; 
+
+  /* google fonts  */
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
   
 }
 

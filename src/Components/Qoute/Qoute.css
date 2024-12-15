@@ -1,0 +1,16 @@
+.QouteMainBox{
+    background-color: rgba(67, 71, 138, 0.774);
+    color: white;
+}
+
+.ProceedButton{
+    
+    background-color: rgb(13, 66, 13);
+}
+
+
+.ProceedButton:hover{
+    
+    background-color: rgb(64, 156, 52);
+}
+

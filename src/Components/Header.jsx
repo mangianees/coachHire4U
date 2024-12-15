@@ -15,7 +15,7 @@ function Header() {
       <Navbar className="bgColor">
         <Container>
           <Navbar.Brand href="#home" className="header-brand">
-            <span style={{ marginLeft: '10px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <span style={{ marginLeft: '10px', display: 'flex', alignItems: 'center', gap: '10px', color:'white'}}>
               <FontAwesomeIcon icon={faPhone} /> 0800 783 3243
               <FontAwesomeIcon icon={faEnvelope} /> sales@coachhire4u.com
             </span>
