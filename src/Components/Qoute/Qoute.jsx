@@ -4,8 +4,16 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faCalendarDays,faPeopleGroup,faBuildingFlag } from "@fortawesome/free-solid-svg-icons";
 import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import '../Qoute/Qoute.css'
+import { useState } from "react";
 
 function Qoute() {
+
+  const [checked,setChecked] = useState(false);
+
+  const handleChange =(event)=>{
+    setChecked(event.target.checked)
+  };
+
   return (
     <>
       <Container>
@@ -17,7 +25,8 @@ function Qoute() {
                   <Form.Check 
                     type="switch"
                     label="Return"
-                    checked="true"
+                    checked={checked}
+                    onChange={handleChange}
                     name="returnBtn"
                   />
                   
@@ -64,6 +73,8 @@ function Qoute() {
                     <Col>
                       <Form.Label><FontAwesomeIcon icon={faLocationDot} /> Travel To</Form.Label>
                       <Form.Control type="text" placeholder="Travel To" />
+                      {checked && (
+                        <>
                       <br />
                       <Form.Label>
                       <FontAwesomeIcon icon={faCalendarDays} /> Return Date 
@@ -71,8 +82,6 @@ function Qoute() {
                             <Row>
                                 <Col>
                                     <Form.Control type="date" />
-
-                                
                                 </Col>
                                 <Col>
                                     <Form.Select aria-label="Default select example">
@@ -83,7 +92,7 @@ function Qoute() {
                                     </Form.Select>
                                 </Col>
                             </Row>
-                            
+                            </>)}
                             <br />  
                                 <Form.Label>
                                 <FontAwesomeIcon icon={faBuildingFlag} /> Trip Reason
