@@ -41,6 +41,7 @@
   background-size: cover;
   background-position: center;
   z-index: -1; 
+   overflow-y:auto; /*sroll bar  */
 
   /* google fonts  */
   font-family: "Roboto Mono", serif;

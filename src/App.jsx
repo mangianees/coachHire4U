@@ -1,7 +1,8 @@
+import CPTBanner from "./Components/CPTBanner/CPTBanner";
 import Header from "./Components/Header"
 import MyNavbar from "./Components/MyNavbar/MyNavbar"
 import Qoute from "./Components/Qoute/Qoute";
-import VimeoVideoPlayer from "./Components/VimeoVideo/VimeoVideo";
+import Reviews from "./Components/Reviews/Reviews";
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       <Header />
       <MyNavbar />
       <Qoute />
+      <CPTBanner />
+      <Reviews />
       
     </div>
   );
