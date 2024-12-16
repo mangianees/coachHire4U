@@ -14,10 +14,11 @@ function Qoute() {
             <Card className="QouteMainBox">
               <Card.Body>
                 <Form>
-                  <Form.Check // prettier-ignore
+                  <Form.Check 
                     type="switch"
-                    id="custom-switch"
                     label="Return"
+                    checked="true"
+                    name="returnBtn"
                   />
                   
                   <br />
@@ -71,7 +72,19 @@ function Qoute() {
                                 <Col>
                                     <Form.Control type="date" />
 
-                                <br />  
+                                
+                                </Col>
+                                <Col>
+                                    <Form.Select aria-label="Default select example">
+                                        <option>Time</option>
+                                        <option value="1">00:00</option>
+                                        <option value="2">00:30</option>
+                                        <option value="3">01:00</option>
+                                    </Form.Select>
+                                </Col>
+                            </Row>
+                            
+                            <br />  
                                 <Form.Label>
                                 <FontAwesomeIcon icon={faBuildingFlag} /> Trip Reason
                                 </Form.Label>
@@ -81,20 +94,6 @@ function Qoute() {
                                         <option value="2">Party</option>
                                         <option value="3">Official</option>
                                     </Form.Select>
-                                </Col>
-                                <Col>
-                                    <Form.Select aria-label="Default select example">
-                                        <option>Time</option>
-                                        <option value="1">00:00</option>
-                                        <option value="2">00:30</option>
-                                        <option value="3">01:00</option>
-                                    </Form.Select>
-
-
-                                    
-                                
-                                </Col>
-                            </Row>
                     </Col>
                   </Row>
                   <br />
