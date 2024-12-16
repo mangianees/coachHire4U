@@ -1,25 +1,36 @@
-// import axios from 'axios';
+import Card from 'react-bootstrap/Card';
+import CardGroup from 'react-bootstrap/CardGroup';
+import './Reviews.css'
+import reviewCard from '../../images/reviewCard.png'
+import review1 from '../../images/review01.png'
+import { Container } from 'react-bootstrap';
 
-// const apiEndpoint = 'https://api.reviews.io/v1/reviews';
-// const apiKey = 'APIKEY HERE'; 
+function Reviews() {
+  return (
+    <>
+    <Container>
+    <CardGroup>
 
-// const getReviews = async () => {
-//   const response = await axios.get(apiEndpoint, {
-//     headers: {
-//       'Authorization': `Bearer ${apiKey}`,
-//     },
-//   });
-
-//   return response.data;
-// };
-
-// export default getReviews;
-
-
-function Reviews(){
-    return(<>
-    <h1>reviews</h1>
-    </>)
+    <Card >
+         <Card.Img variant="top" src= {reviewCard} className='reviewCard'/>
+        
+      </Card>
+      <Card >
+         <Card.Img variant="top" src= {review1} className='reviewCard'/>
+        
+      </Card>
+      <Card>
+         <Card.Img variant="top" src= {review1} className='reviewCard'/>
+        
+      </Card>
+      <Card>
+         <Card.Img variant="top" src= {review1} className='reviewCard'/>
+        
+      </Card>
+    </CardGroup>
+    </Container>
+    </>
+  );
 }
 
 export default Reviews;
