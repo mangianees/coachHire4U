@@ -23,7 +23,7 @@ function Header() {
           <div className="social-icons-container">
             <a
               className="header-logo"
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/CoachHire4U/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -37,7 +37,7 @@ function Header() {
             </a>
             <a
               className="header-logo"
-              href="https://www.x.com"
+              href="https://x.com/coachhire4u"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -51,7 +51,7 @@ function Header() {
             </a>
             <a
               className="header-logo"
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/ch4ugrouptravel/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -65,7 +65,7 @@ function Header() {
             </a>
             <a
               className="header-logo"
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/company/coachhire4u"
               target="_blank"
               rel="noopener noreferrer"
             >
