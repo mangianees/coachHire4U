@@ -11,6 +11,11 @@
     "Birthday": "Birthday",
     "Party": "Party",
     "Official": "Official",
-    "Proceed": "Proceed"
+    "Proceed": "Proceed",
+    "Area":"Area",
+    "Service":"Service",
+    "Fleet":"Fleet",
+    "Things To Do":"Things To Do",
+    "About Us":"About Us"
   }
   

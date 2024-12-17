@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import coachHireLogo from '../../images/CoachHireLogo.png';
 import './MyNavbar.css'; 
+
 import { useTranslation } from "react-i18next";
 
 function MyNavbar() {
@@ -30,7 +31,9 @@ function MyNavbar() {
             navbarScroll
           > 
         
-            <NavDropdown title="Area" id="area">
+            {/* <NavDropdown title="Area" id="area"> */}
+
+            <NavDropdown title= {t("Area")} id="area">
               
               <NavDropdown.Item href="#action3">London Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">England Coach Hire</NavDropdown.Item>
@@ -40,14 +43,14 @@ function MyNavbar() {
               <NavDropdown.Item href="#action3">European Coach Hire</NavDropdown.Item>
             
             </NavDropdown>
-            <NavDropdown title="Service" id="service">
+            <NavDropdown title={t("Service")} id="service">
               <NavDropdown.Item href="#action3">Airport Transfer</NavDropdown.Item>
               <NavDropdown.Item href="#action3">Event / Festival</NavDropdown.Item>
               <NavDropdown.Item href="#action3">Education Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">Coach Hire by Destination</NavDropdown.Item>
               <NavDropdown.Item href="#action3">Corporate Coach Hire</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Fleet" id="fleet">
+            <NavDropdown title={t("Fleet")} id="fleet">
               <NavDropdown.Item href="#action3">16-19 Mini Bus</NavDropdown.Item>
               <NavDropdown.Item href="#action3">20-34 Seat Coach</NavDropdown.Item>
               <NavDropdown.Item href="#action3">50-53 Seat Coach</NavDropdown.Item>
@@ -55,13 +58,13 @@ function MyNavbar() {
               <NavDropdown.Item href="#action3">70-74 Seat Coach</NavDropdown.Item>
               <NavDropdown.Item href="#action3">Cheap Coach Hire</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Things To Do" id="thingstodo">
+            <NavDropdown title={t("Things To Do")} id="thingstodo">
               <NavDropdown.Item href="#action3">Festival Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">Events Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">Sports Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">UK Tours Coach Hire</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="About Us" id="aboutUs">
+            <NavDropdown title={t("About Us")} id="aboutUs">
               <NavDropdown.Item href="#action3">Blog</NavDropdown.Item>
               <NavDropdown.Item href="#action3">Career</NavDropdown.Item>
               <NavDropdown.Item href="#action3">Partners</NavDropdown.Item>
