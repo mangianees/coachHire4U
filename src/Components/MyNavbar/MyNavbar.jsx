@@ -5,8 +5,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import coachHireLogo from '../../images/CoachHireLogo.png';
 import './MyNavbar.css'; 
+import { useTranslation } from "react-i18next";
 
 function MyNavbar() {
+  const { t } = useTranslation();
+  
   return (
     <Navbar expand="lg" className="moveToRight">
       <Container fluid >
