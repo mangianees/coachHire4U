@@ -1,0 +1,13 @@
+/* import greenBanckground from '../../images/GreenBackGround.jpg' */
+
+.GreenBackGround {
+    width: 100%;
+    height: 60%;
+   background-image: url('../../images/GreenBackGround.jpg'); 
+}
+
+.Header{
+
+    text-align: center;
+
+}

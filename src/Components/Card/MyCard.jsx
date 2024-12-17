@@ -11,12 +11,7 @@ function myCard(props) {
         <Card.Body>
           <Card.Title className="cardTitle">{props.cardTitle}</Card.Title>
           <Card.Text>{props.cardBody}</Card.Text>
-          <div className="d-grid gap-2">
-            <Button className="myButton buttonAtBottom" size="lg">
-              Book Now
-            </Button>
-          </div>
-        </Card.Body>
+          </Card.Body>
       </Card>
     </>
   );
