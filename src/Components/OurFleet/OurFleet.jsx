@@ -1,8 +1,10 @@
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import "./OurFleet.css";
 import "../../Components/Qoute/Qoute.css";
-
 import MyCard from "../Card/MyCard.jsx";
+import economyClassImage from '../../images/thumbnail_Economy.jpg'
+import businessClassImage from '../../images/thumbnail_Business.jpg'
+import vipClassImage from '../../images/thumbnail_Vip.jpg'
 
 function OurFleet() {
   const economyCardBody =
@@ -33,13 +35,13 @@ function OurFleet() {
           </Row>
           <Row>
             <Col>
-              <MyCard cardTitle="Economy Class" cardBody={economyCardBody} />
+              <MyCard cardTitle="Economy Class" cardBody={economyCardBody} cardImage={economyClassImage}/>
             </Col>
             <Col>
-              <MyCard cardTitle="Business Class" cardBody={businessCardBody} />
+              <MyCard cardTitle="Business Class" cardBody={businessCardBody} cardImage={businessClassImage}/>
             </Col>
             <Col>
-              <MyCard cardTitle="VIP Class" cardBody={vipCardBody} />
+              <MyCard cardTitle="VIP Class" cardBody={vipCardBody} cardImage={vipClassImage}/>
             </Col>
           </Row>
         </Container>
