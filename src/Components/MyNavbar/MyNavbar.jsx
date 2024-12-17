@@ -26,12 +26,12 @@ function MyNavbar() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" style={{ width: '100%' }}>
           <Nav
-            // className="moveToRight"
+            
             style={{ maxHeight: '100px' }}
             navbarScroll
           > 
         
-            {/* <NavDropdown title="Area" id="area"> */}
+            
 
             <NavDropdown title= {t("Area")} id="area">
               

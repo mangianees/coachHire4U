@@ -1,0 +1,25 @@
+import { Button, Card } from "react-bootstrap";
+import thumbnailEconomy from "../../images/thumbnail_Economy.jpg";
+import "..//../Components/Qoute/Qoute.css";
+import "./MyCard.css";
+
+function myCard(props) {
+  return (
+    <>
+      <Card className="myCardBox cardBody">
+        <Card.Img variant="top" src={thumbnailEconomy} />
+        <Card.Body>
+          <Card.Title className="cardTitle">{props.cardTitle}</Card.Title>
+          <Card.Text>{props.cardBody}</Card.Text>
+          <div className="d-grid gap-2">
+            <Button className="myButton buttonAtBottom" size="lg">
+              Book Now
+            </Button>
+          </div>
+        </Card.Body>
+      </Card>
+    </>
+  );
+}
+
+export default myCard;

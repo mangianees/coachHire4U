@@ -49,7 +49,7 @@ function Header() {
           </span>
         </Navbar.Brand>
         <div className="social-icons-container">
-          {/* Language Selection */}
+          
           <Stack direction="horizontal" gap={2} className="align-items-center">
             <img
               src={selectedLanguage.flag}
