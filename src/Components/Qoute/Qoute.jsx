@@ -139,7 +139,7 @@ function Qoute() {
                   </Col>
                 </Row>
                 <br />
-                <Button className="ProceedButton" tabIndex={7}>
+                <Button className="myButton" tabIndex={7}>
                   {t("Proceed")}
                 </Button>
               </Form>
