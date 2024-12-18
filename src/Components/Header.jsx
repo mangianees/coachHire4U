@@ -7,7 +7,7 @@ import linkedin from "../images/Social Media/linkedin.png";
 import UnitedKingdom from "../images/flags/uk.png";
 import Spain from "../images/flags/spain.png";
 import Germany from "../images/flags/germany.png";
-
+import './Header.css'
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -32,9 +32,10 @@ function Header() {
   };
 
   return (
-    <Navbar className="bg-body-tertiary bgColor py-2">
+    <Navbar className="navbar bgColor py-2"> {/* Ensuring bgColor class is applied */}
+    
       <Container>
-        <Row className="align-items-center w-100">
+        <Row className="align-items-center w-100 ">
           {/* Left Section: Contact Information */}
           <Col xs={12} lg={6} className="text-center text-lg-start mb-2 mb-lg-0">
             <div>

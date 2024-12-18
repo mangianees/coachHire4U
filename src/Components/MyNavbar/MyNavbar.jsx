@@ -1,10 +1,10 @@
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import coachHireLogo from '../../images/CoachHireLogo.png';
 import './MyNavbar.css'; 
-
 import { useTranslation } from "react-i18next";
 
 function MyNavbar() {
@@ -13,6 +13,7 @@ function MyNavbar() {
   return (
     <Navbar expand="lg" className="moveToRight">
       <Container fluid>
+        {/* Logo on the left */}
         <Navbar.Brand href="#" className="logo-wrapper">
           <img
             alt="Coach Hire Logo"
@@ -20,9 +21,11 @@ function MyNavbar() {
             className="logo"
           />
         </Navbar.Brand>
+
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll"> 
-          <Nav className="me-auto"> 
+        <Navbar.Collapse id="navbarScroll">
+          {/* Navigation Menu on the right */}
+          <Nav className="navbar-nav ms-auto"> {/* Aligns items to the right */}
             <NavDropdown title={t("Area")} id="area">
               <NavDropdown.Item href="#action3">London Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">England Coach Hire</NavDropdown.Item>
