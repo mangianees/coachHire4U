@@ -1,12 +1,12 @@
 import { Navbar, Container, Row, Col, Stack } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import facebook from "../images/Social Media/facebook.png";
-import x from "../images/Social Media/x.png";
-import instagram from "../images/Social Media/instagram.png";
-import linkedin from "../images/Social Media/linkedin.png";
-import UnitedKingdom from "../images/flags/uk.png";
-import Spain from "../images/flags/spain.png";
-import Germany from "../images/flags/germany.png";
+import facebook from "../../images/Social Media/facebook.png";
+import x from "../../images/Social Media/x.png";
+import instagram from "../../images/Social Media/instagram.png";
+import linkedin from "../../images/Social Media/linkedin.png";
+import UnitedKingdom from "../../images/flags/uk.png";
+import Spain from "../../images/flags/spain.png";
+import Germany from "../../images/flags/germany.png";
 import './Header.css'
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
