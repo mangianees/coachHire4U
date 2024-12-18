@@ -1,4 +1,4 @@
-/* Adjust MyNavbar position */
+/* MyNavbar position */
 .moveToRight {
   display: flex;
   justify-content: space-between; /* Pushes content to left and right */

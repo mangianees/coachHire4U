@@ -15,7 +15,7 @@ function Reviews() {
 
   const handleScroll = (direction) => {
     if (scrollContainer.current) {
-      const scrollAmount = 240; // Adjust scroll amount as needed
+      const scrollAmount = scrollContainer.current.firstChild.offsetWidth; // Get the width of a single card
       scrollContainer.current.scrollBy({
         left: direction === "left" ? -scrollAmount : scrollAmount,
         behavior: "smooth",
@@ -27,7 +27,7 @@ function Reviews() {
     <Container className="reviews-container">
       {/* Static Card */}
       <div className="static-card">
-        <Card>
+        <Card className="sticky-card">
           <Card.Img variant="top" src={reviewCard} className="reviewCard" />
         </Card>
       </div>
@@ -44,35 +44,11 @@ function Reviews() {
 
         {/* Scrollable Cards */}
         <div className="scrollable-container" ref={scrollContainer}>
-          <Card className="scrollable-card">
-            <Card.Img variant="top" src={review1} className="reviewCard" />
-          </Card>
-          <Card className="scrollable-card">
-            <Card.Img variant="top" src={review1} className="reviewCard" />
-          </Card>
-          <Card className="scrollable-card">
-            <Card.Img variant="top" src={review1} className="reviewCard" />
-          </Card>
-
-          <Card className="scrollable-card">
-            <Card.Img variant="top" src={review1} className="reviewCard" />
-          </Card>
-          <Card className="scrollable-card">
-            <Card.Img variant="top" src={review1} className="reviewCard" />
-          </Card>
-          <Card className="scrollable-card">
-            <Card.Img variant="top" src={review1} className="reviewCard" />
-          </Card>
-
-          <Card className="scrollable-card">
-            <Card.Img variant="top" src={review1} className="reviewCard" />
-          </Card>
-          <Card className="scrollable-card">
-            <Card.Img variant="top" src={review1} className="reviewCard" />
-          </Card>
-          <Card className="scrollable-card">
-            <Card.Img variant="top" src={review1} className="reviewCard" />
-          </Card>
+          {[...Array(9)].map((_, index) => (
+            <Card className="scrollable-card" key={index}>
+              <Card.Img variant="top" src={review1} className="reviewCard" />
+            </Card>
+          ))}
         </div>
 
         {/* Right Scroll Button */}
