@@ -1,11 +1,12 @@
-/* Menu Bar Background Color */
+/* Adjust MyNavbar position */
 .moveToRight {
   display: flex;
-  justify-content: space-between; /* This pushes the content to the left and right */
+  justify-content: space-between; /* Pushes content to left and right */
   align-items: center;
   width: 100%;
   padding: 0.5rem 1rem;
   background-color: rgba(253, 251, 251, 0.959);
+  /* margin-top: 1px; Moves MyNavbar down to avoid overlap with Header */
 }
 
 /* Logo positioning on the left */

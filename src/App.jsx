@@ -13,12 +13,15 @@ function App() {
 
   return (
     <>
+    <div className="App">
+
       <Header />
       <MyNavbar />
       <Qoute />
       {isLargeScreen && <CPTBanner />}
       <Reviews />
       <OurFleet />
+    </div>
     </>
   );
 }

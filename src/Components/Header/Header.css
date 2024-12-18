@@ -1,7 +1,7 @@
 /* Ensure that background color of the navbar is applied */
 .navbar.bgColor {
   background-color: rgba(8, 16, 85, 0.911) !important;
-  height: 50px;
+  height: 100px; /* Adjusted height */
   display: flex;
   align-items: center;
   color: white;
