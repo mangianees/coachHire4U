@@ -1,16 +1,25 @@
-.QouteMainBox{
+.QouteMainBox {
     background-color: rgba(67, 71, 138, 0.774);
     color: white;
-}
-
-.myButton{
-    
+  }
+  
+  .myButton {
     background-color: rgb(13, 66, 13);
-}
-
-
-.ProceedButton:hover{
-    
+  }
+  
+  /* Hover effect for button */
+  .ProceedButton:hover {
     background-color: rgb(64, 156, 52);
-}
-
+  }
+  
+  /* Responsive layout adjustments */
+  @media (max-width: 768px) {
+    .QouteMainBox {
+      padding: 15px;
+    }
+  
+    .swap-icon {
+      margin-top: 1rem;
+    }
+  }
+  

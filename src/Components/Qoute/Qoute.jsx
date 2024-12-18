@@ -17,8 +17,10 @@ function Qoute() {
   const [checked, setChecked] = useState(false);
   const [travelTo, setTravelTo] = useState("");
   const [travelFrom, setTravelFrom] = useState("");
+  const [departureTime, setDepartureTime] = useState("");
+  const [returnTime, setReturnTime] = useState("");
 
-  // Translation setting 1
+  // Translation setting
   const { t } = useTranslation();
 
   // Swap the values of travelTo and travelFrom
@@ -33,20 +35,23 @@ function Qoute() {
   return (
     <Container>
       <Row>
-        <Col xs={8}>
+        <Col xs={12} md={8}>
           <Card className="QouteMainBox">
-            <Card.Body>
+            <Card.Body className="d-flex flex-column">
               <Form>
+                {/* Switch for Return Trip */}
                 <Form.Check
                   type="switch"
                   label={t("Return")}
                   checked={checked}
                   onChange={(e) => setChecked(e.target.checked)}
                   tabIndex={0}
+                  className="mb-3"
                 />
-                <br />
-                <Row>
-                  <Col>
+                
+                {/* Travel From */}
+                <Row className="mb-3">
+                  <Col xs={12} md={5}>
                     <Form.Label>
                       <FontAwesomeIcon icon={faLocationDot} /> {t("Travel From")}
                     </Form.Label>
@@ -57,44 +62,21 @@ function Qoute() {
                       onChange={(e) => setTravelFrom(e.target.value)}
                       tabIndex={1}
                     />
-                    <br />
-                    <Form.Label>
-                      <FontAwesomeIcon icon={faCalendarDays} /> {t("Departure Date")}
-                    </Form.Label>
-                    <Row>
-                      <Col>
-                        <Form.Control type="date" tabIndex={3} />
-                      </Col>
-                      <Col>
-                        <Form.Select aria-label="Default select example" tabIndex={4}>
-                          <option>{t("Time")}</option>
-                          <option value="1">00:00</option>
-                          <option value="2">00:30</option>
-                          <option value="3">01:00</option>
-                        </Form.Select>
-                      </Col>
-                    </Row>
-                    <Form.Label>
-                      <br />
-                      <FontAwesomeIcon icon={faPeopleGroup} /> {t("Number of People")}
-                    </Form.Label>
-                    <Form.Select aria-label="Default select example" tabIndex={6}>
-                      <option>{t("No of Passengers")}</option>
-                      <option value="1">10</option>
-                      <option value="2">20</option>
-                      <option value="3">30</option>
-                    </Form.Select>
                   </Col>
-                  <Col xs={1} className="text-center">
-                    <br />
+                  <Col xs={12} md={2} className="text-center">
                     <FontAwesomeIcon
                       icon={faRepeat}
                       className="swap-icon"
                       onClick={handleSwapTravel}
-                      style={{ cursor: "pointer", fontSize: "1.5rem", marginTop: "1.5rem" }}
+                      style={{
+                        cursor: "pointer",
+                        fontSize: "1.5rem",
+                        marginTop: "1.5rem",
+                      }}
                     />
                   </Col>
-                  <Col>
+                  {/* Travel To */}
+                  <Col xs={12} md={5}>
                     <Form.Label>
                       <FontAwesomeIcon icon={faLocationDot} /> {t("Travel To")}
                     </Form.Label>
@@ -105,32 +87,84 @@ function Qoute() {
                       onChange={(e) => setTravelTo(e.target.value)}
                       tabIndex={2}
                     />
-                    {checked && (
-                      <>
-                        <br />
-                        <Form.Label>
-                          <FontAwesomeIcon icon={faCalendarDays} /> {t("Return Date")}
-                        </Form.Label>
-                        <Row>
-                          <Col>
-                            <Form.Control type="date" />
-                          </Col>
-                          <Col>
-                            <Form.Select aria-label="Default select example">
-                              <option>{t("Time")}</option>
-                              <option value="1">00:00</option>
-                              <option value="2">00:30</option>
-                              <option value="3">01:00</option>
-                            </Form.Select>
-                          </Col>
-                        </Row>
-                      </>
-                    )}
-                    <br />
+                  </Col>
+                </Row>
+
+                {/* Departure Date and Time */}
+                <Row className="mb-3">
+                  <Col xs={12} md={6}>
+                    <Form.Label>
+                      <FontAwesomeIcon icon={faCalendarDays} /> {t("Departure Date")}
+                    </Form.Label>
+                    <Form.Control
+                      type="date"
+                      tabIndex={3}
+                    />
+                  </Col>
+                  <Col xs={12} md={6}>
+                    <Form.Label>{t("Departure Time")}</Form.Label>
+                    <Form.Select
+                      aria-label="Select Departure Time"
+                      value={departureTime}
+                      onChange={(e) => setDepartureTime(e.target.value)}
+                      tabIndex={4}
+                    >
+                      <option>{t("Time")}</option>
+                      <option value="1">00:00</option>
+                      <option value="2">00:30</option>
+                      <option value="3">01:00</option>
+                    </Form.Select>
+                  </Col>
+                </Row>
+
+                {/* Return Date and Time (if checked) */}
+                {checked && (
+                  <Row className="mb-3">
+                    <Col xs={12} md={6}>
+                      <Form.Label>
+                        <FontAwesomeIcon icon={faCalendarDays} /> {t("Return Date")}
+                      </Form.Label>
+                      <Form.Control type="date" tabIndex={5} />
+                    </Col>
+                    <Col xs={12} md={6}>
+                      <Form.Label>{t("Return Time")}</Form.Label>
+                      <Form.Select
+                        aria-label="Select Return Time"
+                        value={returnTime}
+                        onChange={(e) => setReturnTime(e.target.value)}
+                        tabIndex={6}
+                      >
+                        <option>{t("Time")}</option>
+                        <option value="1">00:00</option>
+                        <option value="2">00:30</option>
+                        <option value="3">01:00</option>
+                      </Form.Select>
+                    </Col>
+                  </Row>
+                )}
+
+                {/* Number of People */}
+                <Row className="mb-3">
+                  <Col xs={12}>
+                    <Form.Label>
+                      <FontAwesomeIcon icon={faPeopleGroup} /> {t("Number of People")}
+                    </Form.Label>
+                    <Form.Select aria-label="Default select example" tabIndex={7}>
+                      <option>{t("No of Passengers")}</option>
+                      <option value="1">10</option>
+                      <option value="2">20</option>
+                      <option value="3">30</option>
+                    </Form.Select>
+                  </Col>
+                </Row>
+
+                {/* Trip Reason */}
+                <Row className="mb-3">
+                  <Col xs={12}>
                     <Form.Label>
                       <FontAwesomeIcon icon={faBuildingFlag} /> {t("Trip Reason")}
                     </Form.Label>
-                    <Form.Select aria-label="Default select example" tabIndex={5}>
+                    <Form.Select aria-label="Default select example" tabIndex={8}>
                       <option>{t("Trip Reason")}</option>
                       <option value="1">{t("Birthday")}</option>
                       <option value="2">{t("Party")}</option>
@@ -138,15 +172,20 @@ function Qoute() {
                     </Form.Select>
                   </Col>
                 </Row>
-                <br />
-                <Button className="myButton" tabIndex={7}>
+              </Form>
+
+              {/* Proceed Button - Positioned to Bottom Right */}
+              <div className="mt-auto d-flex justify-content-end">
+                <Button className="myButton" tabIndex={9}>
                   {t("Proceed")}
                 </Button>
-              </Form>
+              </div>
             </Card.Body>
           </Card>
         </Col>
-        <Col>
+
+        {/* Video Player Column */}
+        <Col xs={12} md={4}>
           <VimeoVideoPlayer />
         </Col>
       </Row>
