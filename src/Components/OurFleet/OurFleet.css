@@ -58,6 +58,10 @@
       gap: 10px; /* Add some spacing between cards */
       
     }
+
+    .iconDown{
+     background-color: red;
+    }
   
     .card-container {
       width: 100%; /* Make cards take full width on smaller screens */
