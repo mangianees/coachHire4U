@@ -5,17 +5,21 @@ import Qoute from "./Components/Qoute/Qoute";
 import CPTBanner from "./Components/CPTBanner/CPTBanner";
 import Reviews from "./Components/Reviews/Reviews";
 import OurFleet from "./Components/OurFleet/OurFleet";
+import { useMediaQuery } from 'react-responsive';
 
 function App() {
+  // Use the media query hook to check for large screens
+  const isLargeScreen = useMediaQuery({ query: '(min-width: 992px)' });
+
   return (
-    <div className="App">
+    <>
       <Header />
       <MyNavbar />
       <Qoute />
-      <CPTBanner />
+      {isLargeScreen && <CPTBanner />}
       <Reviews />
       <OurFleet />
-    </div>
+    </>
   );
 }
 

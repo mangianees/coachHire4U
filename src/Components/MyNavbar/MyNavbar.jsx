@@ -1,4 +1,3 @@
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -13,35 +12,24 @@ function MyNavbar() {
   
   return (
     <Navbar expand="lg" className="moveToRight">
-      <Container fluid >
-        <Navbar.Brand href="#">
+      <Container fluid>
+        <Navbar.Brand href="#" className="logo-wrapper">
           <img
             alt="Coach Hire Logo"
             src={coachHireLogo}
-            width="400"
-            height="100"
-            className="d-inline-block align-top"
+            className="logo"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll" style={{ width: '100%' }}>
-          <Nav
-            
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          > 
-        
-            
-
-            <NavDropdown title= {t("Area")} id="area">
-              
+        <Navbar.Collapse id="navbarScroll"> 
+          <Nav className="me-auto"> 
+            <NavDropdown title={t("Area")} id="area">
               <NavDropdown.Item href="#action3">London Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">England Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">Ireland Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">Scotland Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">Wales Coach Hire</NavDropdown.Item>
               <NavDropdown.Item href="#action3">European Coach Hire</NavDropdown.Item>
-            
             </NavDropdown>
             <NavDropdown title={t("Service")} id="service">
               <NavDropdown.Item href="#action3">Airport Transfer</NavDropdown.Item>

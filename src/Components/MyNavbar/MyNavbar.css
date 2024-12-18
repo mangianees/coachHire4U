@@ -1,20 +1,33 @@
- /* menu Bar Background color */
+/* Menu Bar Background Color */
 .moveToRight {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    width: 100%;
-    padding: 0.5rem 1rem;
-    background-color: rgba(253, 251, 251, 0.959); 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: rgba(253, 251, 251, 0.959);
+}
 
-    
-    
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Default logo styling for desktop */
+.logo {
+  width: 400px;
+  height: 100px;
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Adjust logo for mobile view */
+@media (max-width: 768px) {
+  .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
   }
-  
-  .navbar-nav {
-    margin-left: auto; 
-    justify-content: flex-end; 
-    flex-grow: 1; 
-    color: white;
-  }
-  
+}

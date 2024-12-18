@@ -1,0 +1,11 @@
+.social-icon img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+  
+  @media (max-width: 576px) {
+    .social-icon {
+      margin: 0 5px; /* Adds uniform spacing */
+    }
+  }
+  
