@@ -7,6 +7,7 @@ import Reviews from "./Components/Reviews/Reviews";
 import OurFleet from "./Components/OurFleet/OurFleet";
 import ThingsToDo from "./Components/ThingsToDo/ThingsToDo";
 import { useMediaQuery } from 'react-responsive';
+import MobileAppBanner from "./Components/MobileAppBanner/MobileAppBanner";
 
 function App() {
   // Use the media query hook to check for large screens
@@ -23,6 +24,7 @@ function App() {
       <Reviews />
       <OurFleet />
       <ThingsToDo />
+      <MobileAppBanner />
     </div>
     </>
   );
