@@ -5,6 +5,7 @@ import Quote from "./Components/Quote/Quote";
 import CPTBanner from "./Components/CPTBanner/CPTBanner";
 import Reviews from "./Components/Reviews/Reviews";
 import OurFleet from "./Components/OurFleet/OurFleet";
+import ThingsToDo from "./Components/ThingsToDo/ThingsToDo";
 import { useMediaQuery } from 'react-responsive';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       {isLargeScreen && <CPTBanner />}
       <Reviews />
       <OurFleet />
+      <ThingsToDo />
     </div>
     </>
   );

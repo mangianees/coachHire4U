@@ -1,0 +1,90 @@
+/* General Styles */
+.OurFleetHeader {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+  }
+  
+  .OurFleetHeader h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .OurFleetHeader p {
+    text-align: justify;
+    font-size: 1rem;
+    max-width: 1400px; /* Restrict paragraph width for better readability */
+  }
+  
+  /* Cards Section */
+  .fleet-cards {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+    flex-wrap: nowrap; /* Prevent cards from wrapping on larger screens */
+    
+  }
+  
+  .card-container {
+    flex: 1 1 0; /* Equal width cards */
+  max-width: 300px; /* Set a max width for each card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 8px; /* Rounded corners */
+  background-color: #ffffff; /* Ensure cards have a white background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Raised shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+
+  }
+
+  .card-container:hover {
+    transform: translateY(-5px); /* Slightly lifts the card on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.15); /* Emphasized shadow on hover */
+  }
+  
+  .containerMargin{
+    margin-top:2%;
+    margin-bottom: 2%;
+    
+  }
+
+  .containerMargin img {
+    display: block; /* Ensures the image behaves like a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .OurFleetHeader h2 {
+      font-size: 1.5rem; /* Smaller header font size for mobile */
+    }
+  
+    .OurFleetHeader p {
+      text-align: center; /* Center-align paragraph on mobile */
+      font-size: 0.9rem;
+    }
+  
+    .fleet-cards {
+      flex-direction: column; /* Stack cards vertically */
+      gap: 10px; /* Add some spacing between cards */
+      
+    }
+
+    /* .iconDown{
+     background-color: red;
+    } */
+  
+    .card-container {
+      width: 100%; /* Make cards take full width on smaller screens */
+      max-width: none; /* Remove max-width constraint for stacked cards */
+      
+    }
+  }
+  
