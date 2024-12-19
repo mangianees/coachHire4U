@@ -1,6 +1,6 @@
 import { Button, Card } from "react-bootstrap";
 // import thumbnailEconomy from "../../images/thumbnail_Economy.jpg";
-import "..//../Components/Qoute/Qoute.css";
+import "../Quote/Quote.css";
 import "./MyCard.css";
 
 function myCard(props) {
@@ -11,7 +11,7 @@ function myCard(props) {
         <Card.Body>
           <Card.Title className="cardTitle">{props.cardTitle}</Card.Title>
           <Card.Text>{props.cardBody}</Card.Text>
-          </Card.Body>
+        </Card.Body>
       </Card>
     </>
   );

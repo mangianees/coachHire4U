@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Components/Header/Header";
 import MyNavbar from "./Components/MyNavbar/MyNavbar";
-import Qoute from "./Components/Qoute/Qoute";
+import Quote from "./Components/Quote/Quote";
 import CPTBanner from "./Components/CPTBanner/CPTBanner";
 import Reviews from "./Components/Reviews/Reviews";
 import OurFleet from "./Components/OurFleet/OurFleet";
@@ -17,7 +17,7 @@ function App() {
 
       <Header />
       <MyNavbar />
-      <Qoute />
+      <Quote />
       {isLargeScreen && <CPTBanner />}
       <Reviews />
       <OurFleet />

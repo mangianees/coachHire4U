@@ -8,7 +8,7 @@ import {
   faRepeat,
 } from "@fortawesome/free-solid-svg-icons";
 import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
-import "../Qoute/Qoute.css";
+import "./Quote.css";
 import VimeoVideoPlayer from "../VimeoVideo/VimeoVideo";
 // Translation settings
 import { useTranslation } from "react-i18next";
@@ -48,12 +48,13 @@ function Qoute() {
                   tabIndex={0}
                   className="mb-3"
                 />
-                
+
                 {/* Travel From */}
                 <Row className="mb-3">
                   <Col xs={12} md={5}>
                     <Form.Label>
-                      <FontAwesomeIcon icon={faLocationDot} /> {t("Travel From")}
+                      <FontAwesomeIcon icon={faLocationDot} />{" "}
+                      {t("Travel From")}
                     </Form.Label>
                     <Form.Control
                       type="text"
@@ -94,12 +95,10 @@ function Qoute() {
                 <Row className="mb-3">
                   <Col xs={12} md={6}>
                     <Form.Label>
-                      <FontAwesomeIcon icon={faCalendarDays} /> {t("Departure Date")}
+                      <FontAwesomeIcon icon={faCalendarDays} />{" "}
+                      {t("Departure Date")}
                     </Form.Label>
-                    <Form.Control
-                      type="date"
-                      tabIndex={3}
-                    />
+                    <Form.Control type="date" tabIndex={3} />
                   </Col>
                   <Col xs={12} md={6}>
                     <Form.Label>{t("Departure Time")}</Form.Label>
@@ -122,7 +121,8 @@ function Qoute() {
                   <Row className="mb-3">
                     <Col xs={12} md={6}>
                       <Form.Label>
-                        <FontAwesomeIcon icon={faCalendarDays} /> {t("Return Date")}
+                        <FontAwesomeIcon icon={faCalendarDays} />{" "}
+                        {t("Return Date")}
                       </Form.Label>
                       <Form.Control type="date" tabIndex={5} />
                     </Col>
@@ -147,9 +147,13 @@ function Qoute() {
                 <Row className="mb-3">
                   <Col xs={12}>
                     <Form.Label>
-                      <FontAwesomeIcon icon={faPeopleGroup} /> {t("Number of People")}
+                      <FontAwesomeIcon icon={faPeopleGroup} />{" "}
+                      {t("Number of People")}
                     </Form.Label>
-                    <Form.Select aria-label="Default select example" tabIndex={7}>
+                    <Form.Select
+                      aria-label="Default select example"
+                      tabIndex={7}
+                    >
                       <option>{t("No of Passengers")}</option>
                       <option value="1">10</option>
                       <option value="2">20</option>
@@ -162,9 +166,13 @@ function Qoute() {
                 <Row className="mb-3">
                   <Col xs={12}>
                     <Form.Label>
-                      <FontAwesomeIcon icon={faBuildingFlag} /> {t("Trip Reason")}
+                      <FontAwesomeIcon icon={faBuildingFlag} />{" "}
+                      {t("Trip Reason")}
                     </Form.Label>
-                    <Form.Select aria-label="Default select example" tabIndex={8}>
+                    <Form.Select
+                      aria-label="Default select example"
+                      tabIndex={8}
+                    >
                       <option>{t("Trip Reason")}</option>
                       <option value="1">{t("Birthday")}</option>
                       <option value="2">{t("Party")}</option>
