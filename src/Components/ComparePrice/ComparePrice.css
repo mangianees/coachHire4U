@@ -1,13 +1,40 @@
-/* import greenBanckground from '../../images/GreenBackGround.jpg' */
-
-.GreenBackGround {
+.GreenBackground {
+    margin-top: 1%;
     width: 100%;
-    height: 60%;
-   background-image: url('../../images/GreenBackGround.jpg'); 
-}
-
-.Header{
-
+    padding: 2%; /* Add padding for better spacing */
+    background-color: rgb(34, 46, 24);
+    color: white;
+  }
+  
+  .Header {
+    font-size: 2rem;
     text-align: center;
-
-}
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .paragraph {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .phoneRow {
+    margin-top: 2rem;
+  }
+  
+  .phoneNumber {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .phoneNumber a {
+    color: white !important;
+    text-decoration: none;
+  }
+  
+  .phoneNumber a:hover {
+    color: rgb(4, 155, 4) !important;
+    text-decoration: underline;
+  }
+  
