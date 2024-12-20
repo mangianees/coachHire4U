@@ -18,13 +18,19 @@ import charginPort from "../../images/Card Icons/plug.png";
 import tabledChairs from "../../images/Card Icons/meeting.png";
 import wifi from "../../images/Card Icons/wifi.png";
 
+import { useTranslation } from "react-i18next";
+
 function OurFleet() {
-  const economyCardBody =
+  const { t } = useTranslation();
+  const economyClassBody =
     "The ideal solution for all those who are looking for the cheapest coachhire services. All our vehicles comply with safety regulations.";
-  const businessCardBody =
+  const businessClassBody =
     "Dedicated to Businesses of all sizes as we have a wide range of vehicles in the business executive class. It's perfect service for no-frills airport transfers of smaller or larger groups.";
-  const vipCardBody =
+  const vipClassBody =
     "Luxurious service for special occasions. Whenever you need that exceptional coach, choose our limited edition pack with VIP Class.";
+
+  const ourFleetMessage =
+    "Whether you’re arranging a small or a big group trip for either business or leisure, look no further. Our fleet comprises vehicles of all sizes so that we can provide high-level services to corporations, schools, and private groups alike.";
 
   return (
     <>
@@ -34,14 +40,9 @@ function OurFleet() {
           {/* Header Section */}
           <Row className="OurFleetHeader">
             <Col>
-              <h2>OUR FLEET</h2>
-              <p>
-                Whether you’re arranging a small or a big group trip for either
-                business or leisure, look no further. Our fleet comprises
-                vehicles of all sizes so that we can provide high-level services
-                to corporations, schools, and private groups alike.
-              </p>
-              <Button className="myButton"> Read More</Button>
+              <h2>{t("OUR FLEET")}</h2>
+              <p>{t("ourFleetMessage")}</p>
+              <Button className="myButton"> {t("READ MORE")}</Button>
             </Col>
           </Row>
 
@@ -49,8 +50,8 @@ function OurFleet() {
           <Row className="fleet-cards">
             <Col md={4} className="card-container">
               <MyCard
-                cardTitle="Economy Class"
-                cardBody={economyCardBody}
+                cardTitle={t("Economy Class")}
+                cardBody={t("economyClassBody")}
                 cardImage={economyClassImage}
               />
               <Container className="containerMargin">
@@ -76,14 +77,14 @@ function OurFleet() {
               </Container>
 
               <Button className="myButton buttonAtBottom" size="lg">
-                Book Now
+                {t("Book Now")}
               </Button>
             </Col>
 
             <Col md={4} className="card-container">
               <MyCard
-                cardTitle="Business Class"
-                cardBody={businessCardBody}
+                cardTitle={t("Business Class")}
+                cardBody={t("businessClassBody")}
                 cardImage={businessClassImage}
               />
               <Container className="containerMargin">
@@ -146,14 +147,14 @@ function OurFleet() {
               </Container>
 
               <Button className="myButton buttonAtBottom" size="lg">
-                Book Now
+              {t("Book Now")}
               </Button>
             </Col>
 
             <Col md={4} className="card-container">
               <MyCard
-                cardTitle="VIP Class"
-                cardBody={vipCardBody}
+                cardTitle={t("VIP Class")}
+                cardBody={t("vipClassBody")}
                 cardImage={vipClassImage}
               />
 
@@ -250,7 +251,7 @@ function OurFleet() {
                 </Row>
               </Container>
               <Button className="myButton buttonAtBottom" size="lg">
-                Book Now
+                {t("Book Now")}
               </Button>
             </Col>
           </Row>
