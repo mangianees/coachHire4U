@@ -9,6 +9,7 @@ import ThingsToDo from "./Components/ThingsToDo/ThingsToDo";
 import { useMediaQuery } from 'react-responsive';
 import MobileAppBanner from "./Components/MobileAppBanner/MobileAppBanner";
 import TrustBanner from "./Components/TrustBanner/TrustBanner";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   // Use the media query hook to check for large screens
@@ -27,6 +28,7 @@ function App() {
       <ThingsToDo />
       <MobileAppBanner />
       <TrustBanner />
+      <Footer />
     </div>
     </>
   );
