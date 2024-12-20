@@ -15,12 +15,14 @@ export default function MobileAppBanner() {
       </Row>
       <Row className="phoneRow">
         <Col xs={12} md={6} className="text-center">
+        
           <a href="#">
-            <img src={googlePlayStore} alt="Google Play Store" />
+            <img src={googlePlayStore} alt="Google Play Store" className="storeIcons"/>
           </a>
           <a href="#">
-            <img src={appleStore} alt="Apple Store" />
+            <img src={appleStore} alt="Apple Store" className="storeIcons"/>
           </a>
+        
         </Col>
         <Col xs={12} md={6} className="text-center">
           <a href="#">
