@@ -1,5 +1,5 @@
 import './TrustCard.css';
-import trust from '../../../images/trust/security.png';
+import trust from '../../images/trust/security.png';
 
 function TrustCard({ title , body }) {
     return ( 

@@ -2,24 +2,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./ComparePrice.css";
 import { Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 function ComparePrice() {
+  const { t } = useTranslation();
+  const compareHeader =
+    "Compare Instant Prices And Get Your Quote in 3 Simple Steps";
+  const compareBody =
+    "Do you need a coach or minibus hire? Look no further. Our coach hire team will work hard to ensure that your journey runs as smoothly as possible. Our logistics experts will also ensure that your coach hire and minibus hire journey are quality checked and delivered to the standard and budget you need. Get an Online quote now or call us today for immediate assistance.";
   return (
     <Container fluid className="GreenBackground">
       <Row>
         <Col xs={12} className="Header">
-          Compare Instant Prices And Get Your Quote in 3 Simple Steps
+          {t("compareHeader")}
         </Col>
       </Row>
       <Row>
         <Col xs={12} md={10} lg={8} className="paragraph mx-auto">
           <p>
-            Do you need a coach or minibus hire? Look no further. Our coach hire
-            team will work hard to ensure that your journey runs as smoothly as
-            possible. Our logistics experts will also ensure that your coach
-            hire and minibus hire journey are quality checked and delivered to
-            the standard and budget you need. Get an Online quote now or call us
-            today for immediate assistance.
+            {t("compareBody")}
           </p>
         </Col>
       </Row>

@@ -1,6 +1,7 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
-import TrustCard from "../ComparePrice/TrustCard/TrustCard";
-import './TrustBanner.css'
+import TrustCard from "../TrustCard/TrustCard.jsx";
+import './TrustBanner.css';
+
 function TrustBanner() {
 
     const cardTitle = "why choose us for your coach hire"
