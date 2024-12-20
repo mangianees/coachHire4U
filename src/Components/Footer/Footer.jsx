@@ -9,64 +9,65 @@ import {
   FaPhoneAlt,
   FaEnvelope
 } from "react-icons/fa";
-
+import { useTranslation } from "react-i18next";
 import SMA from '../../images/footer/SMA.png';
 import thames from '../../images/footer/Thames.png';
 import UKCoach from '../../images/footer/UKCoach.png';
 import ReviewsIO from "../../images/review01.png"
 
 const Footer = () => {
+    const { t } = useTranslation();
   return (
     <footer className="footer">
       <div className="footer-container">
         {/* Column 1: Site Map */}
         <div className="footer-column">
-          <h4>Site Map</h4>
+          <h4>{t("Site Map")}</h4>
           <ul>
-            <li><a href="#">Fleet</a></li>
-            <li><a href="#">Areas</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Things To Do</a></li>
+            <li><a href="#">{t("Fleet")}</a></li>
+            <li><a href="#">{t("Areas")}</a></li>
+            <li><a href="#">{t("Blog")}</a></li>
+            <li><a href="#">{t("Services")}</a></li>
+            <li><a href="#">{t("Things To Do")}</a></li>
           </ul>
         </div>
 
         {/* Column 2: Useful Links */}
         <div className="footer-column">
-          <h4>Useful Links</h4>
+          <h4>{t("Useful Links")}</h4>
           <ul>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Our Partners</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Health & Safety</a></li>
-            <li><a href="#">Destinations Covered</a></li>
+            <li><a href="#">{t("Careers")}</a></li>
+            <li><a href="#">{t("About Us")}</a></li>
+            <li><a href="#">{t("Our Partners")}</a></li>
+            <li><a href="#">{t("Privacy Policy")}</a></li>
+            <li><a href="#">{t("TermsConditions")}</a></li>
+            <li><a href="#">{t("HealthSafety")}</a></li>
+            <li><a href="#">{t("Destinations Covered")}</a></li>
           </ul>
         </div>
 
         {/* Column 3: Contact Info */}
         <div className="footer-column">
-          <h4>Contact Info</h4>
+          <h4>{t("Contact Info")}</h4>
           <ul>
             <li>
               <FaMapMarkerAlt className="icon" />
-              <a href="#">Coach Specialist for London & UK</a>
+              <a href="#">{t("Coach")}</a>
             </li>
             <li>
               <FaPhoneAlt className="icon" />
-              <a href="tel:08007833243">Call us: 0800 783 3243</a>
+              <a href="tel:08007833243">{t("Call us")}: 0800 783 3243</a>
             </li>
             <li>
               <FaEnvelope className="icon" />
-              <a href="mailto:sales@coachhire4u.com">Email us on: sales@coachhire4u.com</a>
+              <a href="mailto:sales@coachhire4u.com">{t("Email")}: sales@coachhire4u.com</a>
             </li>
           </ul>
         </div>
 
         {/* Column 4: Follow & Share */}
         <div className="footer-column">
-          <h4>Follow & Share</h4>
+          <h4>{t("FollowShare")}</h4>
           <div className="social-icons">
             <a href="#" aria-label="Facebook"><FaFacebookF /></a>
             <a href="#" aria-label="Twitter"><FaTwitter /></a>
