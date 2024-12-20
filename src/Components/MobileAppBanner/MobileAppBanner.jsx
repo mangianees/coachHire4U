@@ -3,14 +3,18 @@ import mobilePhone from '../../images/MobileAppBanner/mobilePhone.png';
 import googlePlayStore from '../../images/MobileAppBanner/googlePlayStore.png';
 import appleStore from '../../images/MobileAppBanner/appleStore.png';
 import './MobileAppBanner.css';
+import { useTranslation } from "react-i18next";
+
 
 export default function MobileAppBanner() {
+  const { t } = useTranslation();
+  const mobileAppTitle="Mobile App Coming Soon";
   return (
     <>
       <Container fluid className="GreenBackground">
         <Row>
           <Col xs={12} className="text-center">
-            <h1>Mobile App Coming Soon</h1>
+            <h1>{t("mobileAppTitle")}</h1>
           </Col>
         </Row>
         <Row className="phoneRow">
