@@ -34,6 +34,19 @@
     "card1Title":"FESTIVAL LARMAL",
     "card2Title":"CARRERAS DE CABALLOS EN LONDRES",
     "card3Title":"MUSEO Y EXCURSIÓN DE UN DÍA",
-    "mobileAppTitle":"Aplicación móvil próximamente"
+    "mobileAppTitle":"Aplicación móvil próximamente",
+    "trustCardTitle":"¿Por qué elegirnos para tu alquiler de autocares?",
+    "safe": "La seguridad de los pasajeros es nuestra máxima prioridad.",
+   "trusted": "Contamos con la confianza de clientes que nos utilizan una y otra vez.",
+   "reliable": "Puedes confiar en Coachhire4u en cada paso del camino.",
+   "flexible": "¡Nuestra gran cantidad de recursos garantiza que siempre haya una solución!",
+   "value": "A nuestro equipo le apasiona brindarle un excelente servicio al mejor precio.",
+   "easy": "¡Obtenga su cotización en 30 segundos o simplemente llame a nuestro amigable equipo!",
+   "safeTitle": "Seguro",
+   "trustedTitle": "Confiable",
+   "reliableTitle": "Confiable",
+   "flexibleTitle": "Flexible",
+   "valueTitle": "Valor",
+   "easyTitle": "Fácil"
   }
   

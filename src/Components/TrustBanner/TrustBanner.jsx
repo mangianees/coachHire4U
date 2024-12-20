@@ -1,10 +1,11 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 import TrustCard from "../TrustCard/TrustCard.jsx";
 import './TrustBanner.css';
+import { useTranslation } from "react-i18next";
 
 function TrustBanner() {
-
-    const cardTitle = "why choose us for your coach hire"
+const { t } = useTranslation();
+    const trustCardTitle = "why choose us for your coach hire"
     const safe = "Passenger safety is our highest priority."
     const trusted = "We are Trusted by clients that use us again and again."
     const reliable = "You can trust Coachhire4u, every step of the way."
@@ -15,26 +16,26 @@ function TrustBanner() {
   return (
     <>
       <Card>
-      <Card.Title className="myCardTitle">{cardTitle.toUpperCase()}</Card.Title>
+      <Card.Title className="myCardTitle">{t("trustCardTitle")}</Card.Title>
         <Container>
           <Row>
             <Col>
-              <TrustCard title={"Safe"} body={safe} />
+              <TrustCard title={t("safeTitle")} body={t("safe")} />
             </Col>
             <Col>
-              <TrustCard title={"Trusted"} body={trusted}/>
+              <TrustCard title={t("trustedTitle")} body={t("trusted")}/>
             </Col>
             <Col>
-              <TrustCard title={"Reliable"} body={reliable}/>
+              <TrustCard title={t("reliableTitle")} body={t("reliable")}/>
             </Col>
             <Col>
-              <TrustCard title={"Flexible"} body={flexible}/>
+              <TrustCard title={t("flexibleTitle")} body={t("flexible")}/>
             </Col>
             <Col>
-              <TrustCard title={"Value"} body={value}/>
+              <TrustCard title={t("valueTitle")} body={t("value")}/>
             </Col>
             <Col>
-              <TrustCard title={"Easy"} body={easy}/>
+              <TrustCard title={t("easyTitle")} body={t("easy")}/>
             </Col>
           </Row>
         </Container>

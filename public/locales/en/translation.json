@@ -34,7 +34,21 @@
     "card1Title":"LARMAL FESTIVAL",
     "card2Title":"HORSE RACING LONDON",
     "card3Title":"MUSEUM AND DAY TRIP",
-    "mobileAppTitle":"Mobile App Coming Soon"
+    "mobileAppTitle":"Mobile App Coming Soon",
+    "trustCardTitle":"why choose us for your coach hire",
+   "safe": "Passenger safety is our highest priority.",
+   "trusted": "We are Trusted by clients that use us again and again.",
+   "reliable": "You can trust Coachhire4u, every step of the way.",
+   "flexible": "Our depth of resource ensures there is always a solution!",
+   "value": "Our team are passionate in providing you an excellent service at the best value.",
+   "easy": "Get your quote in 30 seconds or simply call our friendly team!",
+   "safeTitle": "Safe",
+   "trustedTitle": "Trusted",
+   "reliableTitle": "Reliable",
+   "flexibleTitle": "Flexible",
+   "valueTitle": "Value",
+   "easyTitle": "Easy"
+
 
   }
   

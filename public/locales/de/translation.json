@@ -34,5 +34,18 @@
   "card1Title":"LARMAL-FESTIVAL",
   "card2Title":"PFERDERENNEN LONDON",
   "card3Title":"MUSEUM UND TAGESAUSFLUG",
-  "mobileAppTitle":"Mobile App bald verfügbar"
+  "mobileAppTitle":"Mobile App bald verfügbar",
+  "trustCardTitle":"Warum sollten Sie uns für Ihre Busvermietung wählen?",
+  "safe": "Die Sicherheit der Passagiere hat für uns höchste Priorität.",
+   "trusted": "Wir genießen das Vertrauen von Kunden, die uns immer wieder nutzen.",
+   "reliable": "Sie können Coachhire4u bei jedem Schritt vertrauen.",
+   "flexible": "Unsere Ressourcenvielfalt stellt sicher, dass es immer eine Lösung gibt!",
+   "value": "Unser Team ist bestrebt, Ihnen einen exzellenten Service zum besten Preis-Leistungs-Verhältnis zu bieten.",
+   "easy": "Holen Sie sich Ihr Angebot in 30 Sekunden ein oder rufen Sie einfach unser freundliches Team an!",
+   "safeTitle": "Sicher",
+   "trustedTitle": "Vertrauenswürdig",
+   "reliableTitle": "Zuverlässig",
+   "flexibleTitle": "Flexibel",
+   "valueTitle": "Wert",
+   "easyTitle": "Einfach"
 }
