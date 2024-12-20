@@ -1,51 +1,53 @@
-.mobilePhoto{
-    margin-top: -26%;
+.GreenBackground {
+  margin-top: 2%;
+  width: 100%;
+  padding: 2%;
+  background-color: rgb(34, 46, 24);
+  color: white;
 }
 
+.Header {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
 
-.GreenBackground {
-    margin-top: 2%;
-    width: 100%;
-    padding: 2%; /* Add padding for better spacing */
-    background-color: rgb(34, 46, 24);
-    color: white;
-  }
-  
-  .Header {
-    font-size: 2rem;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .paragraph {
-    text-align: justify;
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  
-  .phoneRow {
-    margin-top: 2rem;
-  }
-  
-  .phoneNumber {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .phoneNumber a {
-    color: white !important;
-    text-decoration: none;
-  }
-  
-  .phoneNumber a:hover {
-    color: rgb(4, 155, 4) !important;
-    text-decoration: underline;
-  }
-  
-  .storeIcons {
-    width: 30%;
-    height: 40%;
+.paragraph {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.phoneRow {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap; /* Ensure rows wrap on smaller screens */
+  justify-content: center;
+}
+
+.storeIcons {
+  width: 40%; /* Adjusted for better display */
+  max-width: 150px; /* Limit size for smaller devices */
+  margin: 10px; /* Add spacing between icons */
+}
+
+.mobilePhoto {
+  width: 80%;
+  max-width: 300px;
+  margin-top: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 3D Effect for Desktop */
+@media (min-width: 992px) { /* Target larger screens (PC) */
+  .mobilePhoto {
+      transform: translateY(-20px); /* Slightly "raise" the image */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow for 3D effect */
+      margin-top: 0; /* Adjust margin for PC */
   }
 
-  
+  .GreenBackground {
+      padding-bottom: 50px; /* Allow space for the image "popping out" */
+  }
+}

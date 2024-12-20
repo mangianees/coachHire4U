@@ -1,0 +1,17 @@
+.trustIconImageSize {
+    width: 70%;
+    height: 10%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.itemCentered {
+    text-align: center;
+    
+    /* border: solid;
+    border-color: rgba(0, 0, 0, 0.2); */
+}
+
+img:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
