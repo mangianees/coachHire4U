@@ -61,12 +61,12 @@ function MyNavbar() {
             </NavDropdown>
             <NavDropdown title={t("Service")} id="service">
               <NavDropdown.Item as="div">
-                <Link to="/AirportTransfer" className="dropdown-link">
+                <Link to="/AirportTransfers" className="dropdown-link">
                   Airport Transfer
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item as="div">
-                <Link to="/EventFestival" className="dropdown-link">
+                <Link to="/EventsFestivals" className="dropdown-link">
                   Event / Festival
                 </Link>
               </NavDropdown.Item>
@@ -88,27 +88,27 @@ function MyNavbar() {
             </NavDropdown>
             <NavDropdown title={t("Fleet")} id="fleet">
               <NavDropdown.Item as="div">
-                <Link to="/1619MiniBus" className="dropdown-link">
+                <Link to="/SeatMiniBux1619" className="dropdown-link">
                   16-19 Mini Bus
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item as="div">
-                <Link to="/2034SeatCoach" className="dropdown-link">
+                <Link to="/SeatCoach2034" className="dropdown-link">
                   20-34 Seat Coach
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item as="div">
-                <Link to="/5053SeatCoach" className="dropdown-link">
+                <Link to="/SeatCoach5053" className="dropdown-link">
                   50-53 Seat Coach
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item as="div">
-                <Link to="/5361SeatCoach" className="dropdown-link">
+                <Link to="/SeatCoach5361" className="dropdown-link">
                   53-61 Seat Coach
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item as="div">
-                <Link to="/7074SeatCoach" className="dropdown-link">
+                <Link to="/SeatCoach7074" className="dropdown-link">
                   70-74 Seat Coach
                 </Link>
               </NavDropdown.Item>
@@ -125,17 +125,17 @@ function MyNavbar() {
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item as="div">
-                <Link to="/EventCoachHire" className="dropdown-link">
+                <Link to="/EventsCoachHire" className="dropdown-link">
                   Events Coach Hire
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item as="div">
-                <Link to="/SportCoachHire" className="dropdown-link">
+                <Link to="/SportsCoachHire" className="dropdown-link">
                   Sports Coach Hire
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item as="div">
-                <Link to="/UkToursCoachHire" className="dropdown-link">
+                <Link to="/UKToursCoachHire" className="dropdown-link">
                   UK Tours Coach Hire
                 </Link>
               </NavDropdown.Item>
@@ -152,7 +152,7 @@ function MyNavbar() {
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item as="div">
-                <Link to="/Partners" className="dropdown-link">
+                <Link to="/OurPartners" className="dropdown-link">
                   Partners
                 </Link>
               </NavDropdown.Item>
