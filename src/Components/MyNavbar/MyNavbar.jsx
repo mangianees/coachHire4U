@@ -15,11 +15,11 @@ function MyNavbar() {
     <Navbar expand="lg" className="moveToRight">
       <Container fluid>
         {/* Logo on the left */}
-        <Navbar.Brand as="div" className="logo-wrapper">
           <Link to="/">
+        <Navbar.Brand as="div" className="logo-wrapper">
             <img alt="Coach Hire Logo" src={coachHireLogo} className="logo" />
-          </Link>
         </Navbar.Brand>
+          </Link>
 
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -28,134 +28,132 @@ function MyNavbar() {
             {" "}
             {/* Aligns items to the right */}
             <NavDropdown title={t("Area")} id="area">
-              <NavDropdown.Item as="div">
-                <Link to="/LondonCoachHire" className="dropdown-link">
-                  London Coach Hire
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item as="div">
+              <Link to="/LondonCoachHire" className="dropdown-link">
+                <NavDropdown.Item as="div">London Coach Hire</NavDropdown.Item>
                 <Link to="/EnglandCoachHire" className="dropdown-link">
+              </Link>
+              <NavDropdown.Item as="div">
                   England Coach Hire
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item as="div">
+                </Link>
                 <Link to="/IrelandCoachHire" className="dropdown-link">
+              <NavDropdown.Item as="div">
                   Ireland Coach Hire
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item as="div">
+                </Link>
                 <Link to="/ScotlandCoachHire" className="dropdown-link">
+              <NavDropdown.Item as="div">
                   Scotland Coach Hire
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item as="div">
+                </Link>
                 <Link to="/WalesCoachHire" className="dropdown-link">
-                  Wales Coach Hire
-                </Link>
-              </NavDropdown.Item>
               <NavDropdown.Item as="div">
-                <Link to="/EuropeanCoachHire" className="dropdown-link">
-                  European Coach Hire
-                </Link>
+                  Wales Coach Hire
               </NavDropdown.Item>
+                </Link>
+                <Link to="/EuropeanCoachHire" className="dropdown-link">
+              <NavDropdown.Item as="div">
+                  European Coach Hire
+              </NavDropdown.Item>
+                </Link>
             </NavDropdown>
             <NavDropdown title={t("Service")} id="service">
-              <NavDropdown.Item as="div">
                 <Link to="/AirportTransfers" className="dropdown-link">
+              <NavDropdown.Item as="div">
                   Airport Transfer
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item as="div">
+                </Link>
                 <Link to="/EventsFestivals" className="dropdown-link">
+              <NavDropdown.Item as="div">
                   Event / Festival
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item as="div">
+                </Link>
                 <Link to="/EducationCoachHire" className="dropdown-link">
+              <NavDropdown.Item as="div">
                   Education Coach Hire
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item as="div">
+                </Link>
                 <Link to="/CoachHireByDestination" className="dropdown-link">
-                  Coach Hire by Destination
-                </Link>
-              </NavDropdown.Item>
               <NavDropdown.Item as="div">
-                <Link to="/CorporateCoachHire" className="dropdown-link">
-                  Corporate Coach Hire
-                </Link>
+                  Coach Hire by Destination
               </NavDropdown.Item>
+                </Link>
+                <Link to="/CorporateCoachHire" className="dropdown-link">
+              <NavDropdown.Item as="div">
+                  Corporate Coach Hire
+              </NavDropdown.Item>
+                </Link>
             </NavDropdown>
             <NavDropdown title={t("Fleet")} id="fleet">
-              <NavDropdown.Item as="div">
                 <Link to="/SeatMiniBux1619" className="dropdown-link">
+              <NavDropdown.Item as="div">
                   16-19 Mini Bus
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item as="div">
+                </Link>
                 <Link to="/SeatCoach2034" className="dropdown-link">
+              <NavDropdown.Item as="div">
                   20-34 Seat Coach
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item as="div">
+                </Link>
                 <Link to="/SeatCoach5053" className="dropdown-link">
+              <NavDropdown.Item as="div">
                   50-53 Seat Coach
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item as="div">
+                </Link>
                 <Link to="/SeatCoach5361" className="dropdown-link">
+              <NavDropdown.Item as="div">
                   53-61 Seat Coach
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item as="div">
+                </Link>
                 <Link to="/SeatCoach7074" className="dropdown-link">
-                  70-74 Seat Coach
-                </Link>
-              </NavDropdown.Item>
               <NavDropdown.Item as="div">
-                <Link to="/CheapCoachHire" className="dropdown-link">
-                  Cheap Coach Hire
-                </Link>
+                  70-74 Seat Coach
               </NavDropdown.Item>
+                </Link>
+                <Link to="/CheapCoachHire" className="dropdown-link">
+              <NavDropdown.Item as="div">
+                  Cheap Coach Hire
+              </NavDropdown.Item>
+                </Link>
             </NavDropdown>
             <NavDropdown title={t("Things To Do")} id="thingstodo">
-              <NavDropdown.Item as="div">
                 <Link to="/FestivalCoachHire" className="dropdown-link">
+              <NavDropdown.Item as="div">
                   Festival Coach Hire
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item as="div">
+                </Link>
                 <Link to="/EventsCoachHire" className="dropdown-link">
+              <NavDropdown.Item as="div">
                   Events Coach Hire
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item as="div">
+                </Link>
                 <Link to="/SportsCoachHire" className="dropdown-link">
-                  Sports Coach Hire
-                </Link>
-              </NavDropdown.Item>
               <NavDropdown.Item as="div">
-                <Link to="/UKToursCoachHire" className="dropdown-link">
-                  UK Tours Coach Hire
-                </Link>
+                  Sports Coach Hire
               </NavDropdown.Item>
+                </Link>
+                <Link to="/UKToursCoachHire" className="dropdown-link">
+              <NavDropdown.Item as="div">
+                  UK Tours Coach Hire
+              </NavDropdown.Item>
+                </Link>
             </NavDropdown>
             <NavDropdown title={t("About Us")} id="aboutUs">
-              <NavDropdown.Item as="div">
                 <Link to="/Blog" className="dropdown-link">
+              <NavDropdown.Item as="div">
                   Blog
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item as="div">
+                </Link>
                 <Link to="/Careers" className="dropdown-link">
-                  Careers
-                </Link>
-              </NavDropdown.Item>
               <NavDropdown.Item as="div">
-                <Link to="/OurPartners" className="dropdown-link">
-                  Partners
-                </Link>
+                  Careers
               </NavDropdown.Item>
+                </Link>
+                <Link to="/OurPartners" className="dropdown-link">
+              <NavDropdown.Item as="div">
+                  Partners
+              </NavDropdown.Item>
+                </Link>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
