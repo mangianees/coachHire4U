@@ -40,14 +40,15 @@
 }
 
 /* 3D Effect for Desktop */
-@media (min-width: 992px) { /* Target larger screens (PC) */
+@media (min-width: 992px) {
+  /* Target larger screens (PC) */
   .mobilePhoto {
-      transform: translateY(-20px); /* Slightly "raise" the image */
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow for 3D effect */
-      margin-top: 0; /* Adjust margin for PC */
+    transform: translateY(-20px); /* Slightly "raise" the image */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow for 3D effect */
+    margin-top: 0; /* Adjust margin for PC */
   }
 
   .GreenBackground {
-      padding-bottom: 50px; /* Allow space for the image "popping out" */
+    padding-bottom: 50px; /* Allow space for the image "popping out" */
   }
 }
