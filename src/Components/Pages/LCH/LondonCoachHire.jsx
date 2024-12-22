@@ -1,3 +1,4 @@
+import { CiTextAlignCenter } from "react-icons/ci";
 import Quote from "../../Quote/Quote";
 import './LondonCoachHire.css'
 

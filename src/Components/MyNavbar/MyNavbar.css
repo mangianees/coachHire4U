@@ -25,19 +25,69 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Adjust logo for mobile view */
-@media (max-width: 768px) {
-  .logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-}
+
 
 /* Navbar items on the right */
 .navbar-nav {
   display: flex;
   justify-content: flex-end; /* Align navbar items to the right */
   flex: 1; /* Allow navbar items to take up available space */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color:rgba(60, 199, 60, 0.76); /* Hover background color for dropdown items */
+  color: white; /* Text color on hover */
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: rgba(253, 251, 251, 0.959); /* Dropdown menu background color */
+  border: none; /* Remove border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+/* For active dropdown or links */
+.navbar-nav .nav-link.active, 
+.navbar-nav .dropdown-toggle.active {
+  background-color: rgba(60, 199, 60, 0.76); /* Active state background color */
+  color: white; /* Active state text color */
+}
+
+/* Dropdown title hover effect */
+.navbar-nav .dropdown-toggle:hover {
+  background-color:rgba(60, 199, 60, 0.76); /* Same hover background color as links */
+  color: white; /* White text on hover */
+  border-radius: 5px; /* Optional rounded edges for consistency */
+}
+
+/* Styling for dropdown titles */
+.navbar-nav .dropdown-toggle {
+  background-color: transparent; /* Transparent background for dropdown titles */
+  padding: 5px 10px; /* Add some padding */
+}
+
+
+/* Change background color on hover */
+.dropdown-link:hover,
+.navbar-nav .nav-link:hover, 
+.navbar-nav .dropdown-toggle:hover {
+  background-color: rgba(60, 199, 60, 0.76); /* Hover background color */
+  color: white; /* Text color on hover */
+  border-radius: 5px; /* Optional for rounded edges */
+}
+
+.dropdown-link, 
+.navbar-nav .nav-link, 
+.navbar-nav .dropdown-toggle {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Default color for links */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .dropdown-link, 
+  .navbar-nav .nav-link, 
+  .navbar-nav .dropdown-toggle {
+    text-align: center; /* Center links in smaller screens */
+    padding: 10px 0; /* Adjust padding for better spacing */
+  }
 }
