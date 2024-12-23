@@ -1,25 +1,58 @@
 .QouteMainBox {
-    background-color: rgba(67, 71, 138, 0.774);
-    color: white;
+  background-color: rgba(67, 71, 138, 0.774);
+  color: white;
+}
+
+.myButton {
+  background-color: rgb(13, 66, 13);
+}
+span {
+  color: rgb(209, 154, 2);
+}
+
+.swap-icon {
+  
+  padding-right: 3rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  align-items: center;
+  align-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  transition: transform 0.2s ease-in-out; /*Smooth hover effect */
+  
+}
+/* this have to delete */
+
+.textSize{
+  width: 19rem;
+  padding-right: 1rem;
+}
+
+.swap-icon:hover {
+  transform: translateY(-5px); /* Raise the icon on hover */
+}
+
+/* Hover effect for button */
+.ProceedButton:hover {
+  background-color: rgb(64, 156, 52);
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .QouteMainBox {
+    padding: 15px;
   }
-  
-  .myButton {
-    background-color: rgb(13, 66, 13);
+
+  .swap-icon {
+    width: 3rem;
+    height: 3rem;
+    margin: auto;
   }
-  
-  /* Hover effect for button */
-  .ProceedButton:hover {
-    background-color: rgb(64, 156, 52);
+
+  .textSize {
+    width: 100%;
   }
-  
-  /* Responsive layout adjustments */
-  @media (max-width: 768px) {
-    .QouteMainBox {
-      padding: 15px;
-    }
-  
-    .swap-icon {
-      margin-top: 1rem;
-    }
-  }
-  
+}

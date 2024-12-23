@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLocationDot,
   faCalendarDays,
   faPeopleGroup,
   faBuildingFlag,
-  faRepeat,
+  faRightLeft,
+  faUpDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import "./Quote.css";
@@ -13,12 +14,13 @@ import VimeoVideoPlayer from "../VimeoVideo/VimeoVideo";
 // Translation settings
 import { useTranslation } from "react-i18next";
 
-function Qoute() {
+function Quote() {
   const [checked, setChecked] = useState(false);
   const [travelTo, setTravelTo] = useState("");
   const [travelFrom, setTravelFrom] = useState("");
   const [departureTime, setDepartureTime] = useState("");
   const [returnTime, setReturnTime] = useState("");
+  const [isMobile, setIsMobile] = useState(false);
 
   // Translation setting
   const { t } = useTranslation();
@@ -32,11 +34,24 @@ function Qoute() {
     });
   };
 
+  // Detect viewport size
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    handleResize(); // Check on initial load
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <Container>
       <Row>
         <Col xs={12} md={8}>
           <Card className="QouteMainBox">
+            <h2>
+              {t("Get An")} <span>{t("Instant Quote")}</span> {t("Now")}
+            </h2>
             <Card.Body className="d-flex flex-column">
               <Form>
                 {/* Switch for Return Trip */}
@@ -58,16 +73,18 @@ function Qoute() {
                     </Form.Label>
                     <Form.Control
                       type="text"
+                      className="textSize"
                       placeholder={t("Travel From")}
                       value={travelFrom}
                       onChange={(e) => setTravelFrom(e.target.value)}
                       tabIndex={1}
                     />
                   </Col>
-                  <Col xs={12} md={2} className="text-center">
+                  <Col xs={12} md={2} className="text-center swap-icon">
+                  
                     <FontAwesomeIcon
-                      icon={faRepeat}
-                      className="swap-icon"
+                      icon={isMobile ? faUpDown : faRightLeft}
+                      className="moveToCenter"
                       onClick={handleSwapTravel}
                       style={{
                         cursor: "pointer",
@@ -83,6 +100,7 @@ function Qoute() {
                     </Form.Label>
                     <Form.Control
                       type="text"
+                      className="textSize"
                       placeholder={t("Travel To")}
                       value={travelTo}
                       onChange={(e) => setTravelTo(e.target.value)}
@@ -201,4 +219,4 @@ function Qoute() {
   );
 }
 
-export default Qoute;
+export default Quote;
