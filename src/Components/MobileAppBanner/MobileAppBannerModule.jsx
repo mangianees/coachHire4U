@@ -14,7 +14,6 @@ export const MobileApp = () => {
         <Col xs={12} className="text-center">
           <h1>{t("mobileAppTitle")}</h1>
         </Col>
-        MobileAppBanner,
       </Row>
       <Row className="phoneRow">
         <Col xs={12} md={6} className="text-center">
